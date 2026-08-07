@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Discussion Blog</title>
+</head>
+
+<body>
+    <center>
+        <h1>Student Discussion Blog</h1>
+    </center>
+
+
+
+    <h2>Comments from Friends</h2>
+    <br>
+
+    <table align="center" width="90%" border="1" cellpadding="10" cellspacing="2">
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Comment</th>
+            <th>Date</th>
+            <th>Difficulty</th>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>DBMS</td>
+            <td>The DBMS paper was moderate. The subjective questions required a lot of typing, but the multiple-choice questions were straightforward.</td>
+            <td>20 July 2026</td>
+            <td>6/10</td>
+        </tr>
+        <tr>
+            <td>Priya</td>
+            <td>DBMS</td>
+            <td>I found the normal form question a bit tricky! The rest of the paper was directly from our syllabus.</td>
+            <td>20 July 2026</td>
+            <td>5/10</td>
+        </tr>
+        <tr>
+            <td>Amit</td>
+            <td>Microprocessor</td>
+            <td>The Microprocessor paper was the toughest of the lot. The 8085 timing diagram portion needed real practice.</td>
+            <td>22 July 2026</td>
+            <td>8/10</td>
+        </tr>
+        <tr>
+            <td>Sneha</td>
+            <td>Web Technology</td>
+            <td>Easiest paper this semester. If you had written HTML and CSS by hand even once, the whole of Section A was free marks.</td>
+            <td>24 July 2026</td>
+            <td>3/10</td>
+        </tr>
+        <tr>
+            <td>Arjun</td>
+            <td>Graph Algorithm</td>
+            <td>Conceptually hard but fair. The Dijkstra question with negative edges was a trap and many of us fell for it.</td>
+            <td>26 July 2026</td>
+            <td>7/10</td>
+        </tr>
+        <tr>
+            <td>Neha</td>
+            <td>COA</td>
+            <td>COA was balanced. Cache and pipelining questions repeated from last year's paper, so previous year practice paid off.</td>
+            <td>28 July 2026</td>
+            <td>6/10</td>
+        </tr>
+    </table>
+
+
+
+    <center>
+        <h2>Add Your Own Review</h2>
+        <form>
+            <table border="0" cellpadding="5">
+                <tr>
+                    <td align="right"><label for="uname">Your Name:</label></td>
+                    <td align="left"><input type="text" id="uname" name="uname" required></td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="subject">Subject:</label></td>
+                    <td align="left">
+                        <select id="subject" name="subject">
+                            <option value="dbms">DBMS</option>
+                            <option value="microprocessor">Microprocessor</option>
+                            <option value="webtech">Web Technology</option>
+                            <option value="graph">Graph Algorithm</option>
+                            <option value="coa">COA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Difficulty:</td>
+                    <td align="left">
+                        <input type="number" placeholder="Out of 10" name="difficulty">
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td align="right" valign="top"><label for="comment">Comment:</label></td>
+                    <td align="left"><textarea id="comment" name="comment" rows="4" cols="40"
+                            placeholder="Share your opinion about the paper..."></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Post Comment"></td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <br><br>
+    </center>
+
+</body>
+
+</html>
