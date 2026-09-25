@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJAX & PHP Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AJAX & PHP Assignment</h1>
+
+    <div class="box">
+      <h2>1. Hello PHP</h2>
+      <button id="helloBtn">Show Message</button>
+      <p id="helloResult" class="result"></p>
+    </div>
+
+    <div class="box">
+      <h2>2. Student Grade</h2>
+      <div class="inline">
+        <input id="marksInput" type="number" placeholder="Enter marks" min="0" max="100">
+        <button id="gradeBtn">Check Grade</button>
+      </div>
+      <p id="gradeResult" class="result"></p>
+    </div>
+
+    <div class="box">
+      <h2>3. Odd Numbers</h2>
+      <div class="inline">
+        <input id="oddInput" type="number" placeholder="Enter N" min="1">
+        <button id="oddBtn">Show Odd Numbers</button>
+      </div>
+      <p id="oddResult" class="result"></p>
+    </div>
+
+    <div class="box">
+      <h2>4. PHP Array Work</h2>
+
+      <div>
+        <h3>i. Sort N Numbers</h3>
+        <input id="sortInput" type="text" placeholder="Example: 9, 4, 7, 2">
+        <button id="sortBtn">Sort Numbers</button>
+        <p id="sortResult" class="result"></p>
+      </div>
+
+      <div style="margin-top: 20px;">
+        <h3>ii. Display N Animal Names</h3>
+        <div class="inline">
+          <input id="animalCount" type="number" placeholder="Enter N" min="1">
+          <button id="animalBtn">Show Animals</button>
+        </div>
+        <p id="animalResult" class="result"></p>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>5. Feedback Form</h2>
+      <form id="feedbackForm">
+        <input type="text" name="name" placeholder="Name">
+        <input type="password" name="password" placeholder="Password">
+
+        <div>
+          <label><input type="radio" name="gender" value="Male"> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+        </div>
+
+        <select name="course">
+          <option value="Web Technology">Web Technology</option>
+          <option value="DBMS">DBMS</option>
+          <option value="Java">Java</option>
+        </select>
+
+        <input type="file" name="userFile">
+        <input type="hidden" name="hiddenValue" value="student-123">
+        <button type="submit">Submit Form</button>
+      </form>
+      <p id="formResult" class="result"></p>
+    </div>
+
+    <div class="box">
+      <h2>6. Animal Images</h2>
+      <div class="inline">
+        <input id="imageCount" type="number" placeholder="Enter N" min="1">
+        <button id="imageBtn">Show Images</button>
+      </div>
+      <div id="imageResult" class="image-box"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
