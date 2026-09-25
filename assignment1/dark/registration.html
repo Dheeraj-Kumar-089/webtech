@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>body{background:#0b0b0b;color:#e6e6e6} table{background:inherit;color:inherit} a{color:#9dd3ff} input,select,textarea,button{background:#111;color:#e6e6e6;border:1px solid #222}</style>
+</head>
+<body>
+    <h2 align="center">Student Registration Form</h2>
+
+    <form action="questionlist.html" method="GET" target="rightFrame">
+        <table align="center" border="2px" cellpadding="12" cellspacing="2" width="80%">
+            
+            <tr>
+                <td><label for="fullname">Full Name:</label></td>
+                <td><input type="text" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob" min="1990-01-01" max="2010-12-31" required></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female" required>
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="branch">Branch / Department:</label></td>
+                <td>
+                    <input list="branch-list" id="branch" name="branch" required>
+                    <datalist id="branch-list">
+                        <option value="Computer Science">
+                        <option value="Electronics">
+                        <option value="Mechanical">
+                        <option value="Civil">
+                        <option value="Information Technology">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="rollno">Roll Number / Student ID:</label></td>
+                <td><input type="text" id="rollno" name="rollno" pattern="[A-Z]{3}[0-9]{7}" placeholder="2024CSB" required></td>
+            </tr>
+            <tr>
+                <td><label for="course">Course / Program:</label></td>
+                <td>
+                    <select id="course" name="course" required>
+                        <option value="">-- Select Course --</option>
+                        <option value="btech">B.Tech / B.E.</option>
+                        <option value="mtech">M.Tech</option>
+                        <option value="phd">PhD</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="semester">Semester:</label></td>
+                <td><input type="number" id="semester" name="semester" min="1" max="8" required></td>
+            </tr>
+            
+            <tr>
+                <td><label for="email">Email Address:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="number" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit phone number" required></td>
+            </tr>
+           
+            <tr>
+                <td><label for="photo">Upload Photograph (JPG/PNG):</label></td>
+                <td><input type="file" id="photo" name="photo" accept="image/*" required></td>
+            </tr>
+            
+        </table>
+        <br>
+        <br>
+        <center>
+        <button type="submit">Submit</button>
+        </center>
+        
+    </form>
+</body>
+</html>
