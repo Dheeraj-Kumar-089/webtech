@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Setup</title>
+    <link rel="stylesheet" href="page-setup.css">
+</head>
+
+<body>
+    <div class="theme-window">
+        <div class="theme-picker">
+            <label for="theme-light"><input type="radio" name="theme" id="theme-light" checked> Light</label>
+            <label for="theme-dark"><input type="radio" name="theme" id="theme-dark"> Dark</label>
+            <label for="theme-high-contrast"><input type="radio" name="theme" id="theme-high-contrast"> High-contrast</label>
+        </div>
+
+        <div class="page-setup-card">
+            <h1>Page Setup</h1>
+
+            <form>
+                <div class="leftright">
+                    <div class="left">
+                        <b><label>Orientation: </label></b>
+
+                        <div class="form-group orientation">
+                            <label><input type="radio" name="orientation" checked> Portrait</label>
+                            <label><input type="radio" name="orientation"> Landscape</label>
+                        </div>
+
+                        <div class="form-group papersize">
+                            <label for="paper-size">Paper Size</label>
+                            <select id="paper-size">
+                                <option>Letter (8.5 × 11 in)</option>
+                                <option>A4 (210 × 297 mm)</option>
+                                <option>Legal (8.5 × 14 in)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="page-color">Page Color</label>
+                            <select id="page-color">
+                                <option value="#ffffff">White</option>
+                                <option value="#d3d3d3">Light Gray</option>
+                                <option value="#fffff0">Ivory</option>
+                                <option value="#cdebf9">Sky Blue</option>
+                                <option value="#f9e3c2">Peach</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <h4>Margins (cm)</h4>
+                        <div class="form-group margin">
+                            <label>Top: <input type="number" value="2.54"></label>
+                            <label>Left: <input type="number" value="2.54"></label>
+                            <label>Bottom: <input type="number" value="2.54"></label>
+                            <label>Right: <input type="number" value="2.54"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="button-row">
+                        <button type="button">Cancel</button>
+                        <button type="button">OK</button>
+                        <button type="button">Set as default</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
