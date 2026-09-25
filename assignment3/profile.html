@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CST faculty profile at IIEST, Shibpur.">
+  <title>Faculty Profile | CST IIEST</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header profile-header">
+    <a class="back-link" href="index.html" aria-label="Back to faculty directory">&larr; Directory</a>
+    <div>
+      <p class="eyebrow">IIEST, Shibpur</p>
+      <h1>Faculty profile</h1>
+    </div>
+  </header>
+
+  <main class="profile-main">
+    <p id="profile-status" class="empty-state" hidden>Faculty profile not found.</p>
+    <article id="profile-card" class="profile-card" hidden>
+      <div class="profile-hero">
+        <img id="profile-photo" class="profile-photo" src="" alt="">
+        <div>
+          <p class="eyebrow">Computer Science &amp; Technology</p>
+          <h2 id="profile-name"></h2>
+          <p id="profile-designation" class="profile-designation"></p>
+          <a id="profile-email" class="email-link" href=""></a>
+        </div>
+      </div>
+      <div class="profile-details">
+        <section class="detail-block">
+          <h3>Highest qualification</h3>
+          <p id="profile-qualification"></p>
+        </section>
+        <section class="detail-block">
+          <h3>Subjects taught this semester</h3>
+          <p id="profile-subjects"></p>
+        </section>
+        <section class="detail-block detail-block-wide">
+          <h3>Research areas</h3>
+          <p id="profile-research"></p>
+        </section>
+      </div>
+      <a id="official-profile" class="primary-button" href="" target="_blank" rel="noopener">Open official IIEST profile</a>
+    </article>
+  </main>
+
+  <script src="faculty-data.js"></script>
+  <script src="profile.js"></script>
+</body>
+</html>

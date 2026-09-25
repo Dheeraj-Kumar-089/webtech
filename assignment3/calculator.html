@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive student grade and SGPA calculator.">
+  <title>Grade &amp; SGPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="page-body" class="calculator-page">
+  <header class="site-header calculator-header">
+    <div class="brand-mark" aria-hidden="true">G+</div>
+    <div>
+      <p class="eyebrow">Academic performance</p>
+      <h1>Student Grade &amp; SGPA Calculator</h1>
+    </div>
+  </header>
+
+  <main class="calculator-main">
+    <section class="calculator-intro" aria-labelledby="calculator-title">
+      <p class="eyebrow">Semester report</p>
+      <h2 id="calculator-title">Turn marks into a clear result.</h2>
+      <p>Enter marks out of 100 for each subject to calculate grades, grade points, and your overall SGPA.</p>
+    </section>
+
+    <form id="grade-form" class="grade-form" novalidate>
+      <div class="subject-heading"><h2>Subject marks</h2><span>5 subjects &middot; 100 marks each</span></div>
+      <div class="subject-list">
+        <label class="subject-row" for="marks-1"><span><strong>01</strong> Mathematics</span><input id="marks-1" type="number" min="0" max="100" step="1" placeholder="0-100" required><span class="subject-result" id="result-1">&mdash;</span></label>
+        <label class="subject-row" for="marks-2"><span><strong>02</strong> Data Structures</span><input id="marks-2" type="number" min="0" max="100" step="1" placeholder="0-100" required><span class="subject-result" id="result-2">&mdash;</span></label>
+        <label class="subject-row" for="marks-3"><span><strong>03</strong> Web Technology</span><input id="marks-3" type="number" min="0" max="100" step="1" placeholder="0-100" required><span class="subject-result" id="result-3">&mdash;</span></label>
+        <label class="subject-row" for="marks-4"><span><strong>04</strong> Database Systems</span><input id="marks-4" type="number" min="0" max="100" step="1" placeholder="0-100" required><span class="subject-result" id="result-4">&mdash;</span></label>
+        <label class="subject-row" for="marks-5"><span><strong>05</strong> Computer Networks</span><input id="marks-5" type="number" min="0" max="100" step="1" placeholder="0-100" required><span class="subject-result" id="result-5">&mdash;</span></label>
+      </div>
+      <p id="form-error" class="form-error" role="alert" hidden></p>
+      <button class="calculate-button" type="submit">Calculate result <span aria-hidden="true">&rarr;</span></button>
+    </form>
+
+    <section id="result-panel" class="result-panel" aria-live="polite" hidden>
+      <div><p class="eyebrow">Final result</p><h2 id="result-title">Your semester summary</h2><p id="result-message">Keep building on your progress.</p></div>
+      <div class="result-stats"><div><span>Total marks</span><strong id="total-marks">0 / 500</strong></div><div><span>Percentage</span><strong id="percentage">0%</strong></div><div class="sgpa-stat"><span>Overall SGPA</span><strong id="sgpa">0.00</strong></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>Grade &amp; SGPA Calculator</span><span>Five-subject semester evaluation</span></footer>
+  <script src="calculator.js"></script>
+</body>
+</html>
